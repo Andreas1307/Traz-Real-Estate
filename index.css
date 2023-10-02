@@ -1,0 +1,980 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #151b3d;
+    font-family: 'Roboto', sans-serif;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    border-bottom: 2px solid #c1be1e;
+}
+#header .name {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 400px;
+}
+#header .name h3 {
+    font-size: 38px;
+    color: #fff;
+    z-index: 100;
+}
+#header .name span {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #c1be1e;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+#header .mobile {
+    display: none;
+}
+#close {
+    display: none;
+}
+@media(max-width:450px) {
+    #header {
+        width: 100%;
+    }
+    #header .name {
+        margin: 20px 60px 20px 60px;
+    }
+    #home-page .home-text h2 {
+        width: 200%;
+    }
+    #home-page .home-picture {
+        width: 1000px;
+        height: 40vh;
+        margin-left: -100px;
+        padding: -200px;
+    }
+    #home-page .home-picture img {
+        padding: -150px;
+    }
+    #front-page-rest {
+        width: 100%;
+    }
+    #front-page-rest .associations {
+        margin: 0;
+        position: relative;
+        left: -150px;
+    }
+    #front-page-rest .associations h2 {
+        width: 300px;
+        position: relative;
+        left: 70px;
+    }
+    .for-rent {
+        width: 100%;
+    }
+    .for-rent h3 {
+        width: 350px;
+        margin: 0 40px;
+    }
+    .for-rent .rent-boxes {
+        position: relative;
+        left: -170px;
+    }
+    .here-to-help {
+        width: 100%;
+    }
+    .here-to-help .insideofhouse {
+        position: relative;
+        left: -90px;
+    }
+    .here-to-help .here   {
+        width: 200px;
+        margin-left: -175px;
+    }
+    .getintouch {
+        display: none;
+    }
+    .info  {
+        position: relative;
+        left: -5px;
+    }
+    footer .pro {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    footer .pro .secound {
+        display: flex;
+    }
+    footer .pro  .project-foot {
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+    #home-page {
+        width: 100%;
+    }
+    #home-page .home-text {
+        margin-top: 0px;
+        margin-left: 20px;
+       
+    }
+    #home-page .home-text h1 {
+        padding: 30px 0;
+        height: 200px;
+        position: relative;
+        top: 200px;
+    }
+    #home-page .home-picture {
+        display: none;
+    }
+    .contact {
+        width: 100%;
+    }
+    .contact .program {
+        position: relative;
+        left: -70px;
+    }
+    .contact .program .submit {
+        position: relative;
+        left: -80px;
+    }
+    .contact .program .map {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        top: 300px;
+        bottom: 500vh;
+        overflow: hidden;
+    }
+    .contact .program .map .map-responsive {
+        position: absolute;
+        left: -100px;
+    }
+    .contactf {
+        margin-top: 400px;
+    }
+
+}
+@media(max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 130vh;
+        width: 300px;
+        background-color: #c1be1e;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        z-index: 100;
+        transition: 0.3s;
+    
+      }
+      #navbar.active{
+        right: 0px;
+      }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #header .mobile {
+        display: flex;
+        align-items: center;
+    }
+    #header .mobile i {
+        font-size: 37px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+      }
+      #header {
+        width: 100%;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .contact .program {
+        margin: 20px 170px;
+      }
+      .contact .program .submit {
+        width: 350px;
+        margin-right: 0;
+      }
+      .contact .program .submit .email {
+        width: 310px;
+        margin: 10px 16px;
+      }
+      .contact .program .submit .but1 {
+        margin: 20px 93px;
+      }
+      .contact.map {
+        position: relative;
+        bottom: 300px; 
+      }
+      .contact.map iframe  {
+        width: 100%;
+       
+      }
+      .contactf {
+        margin-top: 350px
+      }
+      #home-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      #home-page .home-text {
+        width: 100%;
+        height: 30vh;
+      }
+      #home-page .home-text h2 {
+        width: 170%;
+      }
+      #home-page .home-text p {
+        display: none;
+      }
+      #home-page .home-picture {
+        position: relative;
+
+      }
+      #home-page .home-picture img {
+        position: absolute;
+        height: 350px;
+        left: 150px;
+      }
+      #front-page-rest {
+        height: 60vh;
+        margin: 500px -40px;
+      }
+      #front-page-rest .associations .boxes {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 140px;
+      }
+      .for-rent {
+        position: relative;
+        top: 400px;
+      }
+      .for-rent .rent-boxes {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 20px;
+      }
+      .for-rent .rent-boxes .rent-box1 {
+        position: relative;
+        left: 123px;
+      }
+      .here-to-help {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 320px;
+      }
+      .here-to-help .insideofhouse {
+        width: 100%;
+
+      }
+      .here-to-help .insideofhouse img {
+        height: 100%;
+        height: auto;
+        position: relative;
+        left: 133px;
+      }
+      .here-to-help .here {
+        width: 100%;
+        position: relative;
+        left: 145px;
+      }
+      .here-to-help .here h2 {
+        position: relative;
+        width: 450px;
+        left: 20px;
+      }
+      .here-to-help .here p {
+        position: relative;
+        width: 400px;
+        left: 20px;
+        text-align: center;
+      }
+      
+      .getintouch .container {
+        position: relative;
+        left: -130px;
+        top: 230px;
+        bottom: 200px;
+        width: 200px;
+      }
+      .getintouch .container p{
+        display: none;
+      }
+      .getintouch .container button {
+        margin-top: 60px;
+      }
+      footer {
+        position: relative;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        border-top: 4px solid #c1be1e;
+      }
+      footer .traz-foot {
+        display: none; 
+      }
+      footer .pro {
+        display: flex;
+        margin: 20px 50px;
+      }
+      .info h2 {
+        position: relative;
+        width:100%;
+      }
+      .info p {
+        position: relative;
+        text-align: center;
+        width: 60%;
+        margin-left: 20px;
+        }
+        #home-page {
+            width: 100%;
+            height: 5vh;
+            display: flex;
+        }
+        #home-page .home-text h1 {
+            width: 150%;
+            margin: -30px 0;
+        }
+        #home-page .home-text h3 {
+            width: 170%;
+            margin: 30px 0;
+
+        }
+        #home-page .home-picture img {
+            position: relative;
+            top: 100px;
+            height: 35vh;
+            margin: 30px 0;
+        }
+        .sell {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .sell .not-ready {
+            position: relative;
+            top: -440px;
+        }
+        .sell  .rent-boxes {
+            position: relative;
+            top: -450px;
+            bottom: 0;
+        }
+        .buying {
+            position: relative;
+            top: -100px;
+        }
+       
+
+
+
+
+
+}
+#navbar .active {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 24px;
+}
+#navbar {
+    display: flex;
+
+}
+#navbar li {
+    list-style: none;
+
+}
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    padding: 20px;
+    transition: .4s ease-in-out;
+
+}
+#navbar li a:hover {
+    color: #c1be1e;
+    font-size: 24px;
+    text-decoration: underline;
+}
+#header .buttons {
+    padding: 10px;
+    margin-left: 20px;
+}
+#header .buttons button {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0 15px;
+    width: 95px;
+    height: 35px;
+    outline: 2px solid #c1be1e;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+#header .buttons button:hover {
+    background-color: #c1be1e;
+}
+#header .buttons button a {
+    text-decoration: none;
+    color: #fff;
+}
+#header .buttons .sign-up {
+    width: 95px;
+    height: 35px;
+    background-color: #c1be1e;
+    transition: .4s ease-in-out;
+}
+#header .buttons .sign-up:hover {
+    background: transparent;
+    outline: 2px solid #c1be1e;
+}
+#home-page {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    padding: 20px;
+}
+#home-page .home-text {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+#home-page .home-text h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 30%;
+    left: 23%;
+    color: #fff;
+}
+#home-page .home-text h3 {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    top: 43%;
+    left: 10%;
+    max-width: 650px;
+}
+#home-page .home-text h2 {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 35%;
+    left: 10%;
+
+}
+#home-page .home-text p {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 47%;
+    left: 30%;
+
+}
+#home-page .home-picture {
+    width: 48%;
+
+}
+#home-page .home-picture img {
+    width: 90%;
+    margin: 49px;
+    border-radius: 20px;
+    outline: 3px solid #c1be1e;
+
+}
+.info {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    background: url(img/a.png);
+    border-bottom: 4px solid #c1be1e;
+    background-position: center;
+    background-size: cover;
+}
+.info h2 {
+    font-size: 50px;
+    color: #fff;
+    padding-top: 13%;
+}
+.info p {
+    position: absolute;
+    left: 20%;
+    padding: 30px 0;
+    max-width: 800px;
+    color: #fff;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#front-page-rest {
+    width: 100%;
+    height: 20vh;
+    margin-top: 70px;
+}
+
+
+#front-page-rest .associations h2 {
+    margin: 20px 50px;
+    font-size: 40px;
+    color: #fff;
+}
+#front-page-rest .associations {
+    margin: 20px 100px;
+    opacity: 1;
+   
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.boxes:nth-child(2) {
+    transition-delay: 200ms;
+}
+.boxes:nth-child(3) {
+    transition-delay: 400ms;
+}
+.boxes:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+
+#front-page-rest .associations .boxes {
+    display: flex;
+}
+
+
+#front-page-rest .associations .box {
+    background-color: #151b3d;
+    width: 200px;
+    height: 160px;
+    border: 3px solid #c1be1e;
+    margin: 30px 70px;
+    border-radius: 25px;
+}
+#front-page-rest .associations .boxes .box i {
+    font-size: 70px;
+    color: #fff;
+    margin: 20px 60px;
+}
+#front-page-rest .associations .boxes .box i:nth-child(2){
+    margin: 20px 220px;
+}
+#front-page-rest .associations .boxes .box p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.for-rent {
+    margin: 150px 0;
+}
+.for-rent h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+.for-rent .rent-boxes {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.for-rent .rent-boxes .rent-box1 {
+    width: 300px;
+    height: 350px;
+    margin: 30px 110px;
+    border: 3px solid #c1be1e;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+
+}
+.for-rent .rent-boxes .rent-box1:hover {
+    transform: translateY(-40px);
+}
+.for-rent .rent-boxes .rent-box1 .top-box {
+    width: 100%;
+}
+.for-rent .rent-boxes .rent-box1 .top-box img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box {
+    width: 100%;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box h2 {
+    color: #fff;
+    font-weight: 700;
+    margin: 8px 10px;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 15px 5px;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box .house-icons {
+    display: flex;
+    margin: 30px 20px;
+}
+.for-rent.sell {
+    margin-top: 100px;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box .house-icons p {
+    margin-right: 30px;
+    color: #fff;
+}
+.for-rent .rent-boxes .rent-box1 .bottom-box .house-icons p i {
+    margin-right: 4px;
+}
+.for-rent .view-more {
+    text-align: center;
+}
+.for-rent .view-more button {
+    width: 170px;
+    height: 45px;
+    border: 2px solid #c1be1e;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.for-rent .view-more button:hover {
+    background-color: #c1be1e;
+}
+.for-rent .view-more a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+.here-to-help {
+    width: 100%;
+    display: flex;
+}
+.here-to-help .insideofhouse {
+    width: 45%;
+    margin: 0 30px 0 80px;
+}
+.here-to-help .insideofhouse img {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #c1be1e;
+}
+.here-to-help .here {
+    width: 40%;
+}
+.here-to-help .here h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin:  30px 0;
+}
+.here-to-help .here p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+    margin: 10px 15px;
+}
+.getintouch {
+    width: 80%;
+    position: relative;
+    top: 130px;
+    left: 280px;
+
+}
+.getintouch .container {
+    background: url(img/getin.png);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 40vh;
+    border-radius: 20px;
+    text-align: center;
+    border: 4px solid #c1be1e;    
+}
+.getintouch .container h3 {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 70px;
+}
+.getintouch .container p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 150px;
+}
+.getintouch .container button {
+    width: 150px;
+    height: 45px;
+    background-color: #c1be1e;
+    border: 2px solid #c1be1e;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.getintouch .container button:hover {
+    background: transparent;
+}
+.getintouch .container button a {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    height: 25vh;    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    cursor: pointer;
+    position: relative;
+    border-top: 4px solid #c1be1e;
+    top: 250px;
+    transition: .5s ease-in-out;
+}
+footer .pro .secound {
+    display: flex;
+}
+footer .traz-foot {
+    padding-left: 60px;
+}
+footer .traz-foot h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 40px;
+}
+footer .traz-foot p {
+    color: #fff;
+    font-size: 15px;
+    width: 320px;
+    padding: 15px 0;
+
+}
+footer .traz-foot .foot-icons i {
+    margin: 13px 5px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+footer .traz-foot .foot-icons i:hover {
+    color: #c1be1e;
+    transform: translateY(-10px);
+}
+footer .project-foot {
+    margin-right: 60px;
+}
+footer .pro {
+    display: flex;
+}
+footer .project-foot h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#options {
+    display: flex;
+    flex-direction: column;
+}
+#options a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 6px 15px;
+}
+#options a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+    color: #c1be1e;
+}
+.for-rent .not-ready {
+    text-align: center;
+}
+.for-rent .not-ready h4{
+    color: #fff;
+}
+.for-rent .not-ready h4 a {
+    color: #fff;
+}
+.contact {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.contact .program {
+    width: 50%;
+    text-align: center;
+}
+.contact .program h2 {
+    font-size: 45px;
+    color: #fff;
+    padding: 30px 0;
+}
+.contact .program p {
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 0;
+}
+.contact .program .submit {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    border: 4px solid #fff;
+}
+.contact .program h3 {
+    color: #fff;
+    font-size: 23px;
+    padding: 20px 10px;
+}
+.contact .program .submit input {
+    border: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    height: 35px;
+    width: 350px;
+    margin: 10px 155px;
+    border-radius: 15px;
+}
+.contact .program .submit textarea {
+    border: 3px solid #fff;
+    background: transparent;
+    border-radius: 15px;
+    margin: 0 15px;
+}
+.contact .program .submit button {
+    width: 160px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #fff;
+    margin: 20px 270px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.contact .program .submit button:hover {
+    background: transparent;
+    color: #fff;
+}
+.contact .map {
+    width: 30%;
+    height: 50vh;
+    
+    
+}
+.contact .map iframe {
+    width: 400px;
+    margin-top: 90px;
+    margin-right: 180px;
+    border-radius: 25px;
+}
+.contactf {
+    margin-top: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
